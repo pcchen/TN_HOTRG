@@ -1,0 +1,23 @@
+[project]
+name = "tn-hotrg"
+version = "0.1.0"
+description = "HOTRG (Higher-Order Tensor Renormalization Group) implemented with the cytnx tensor-network library"
+authors = [
+    { name = "Pochung Chen", email = "pcchen@phys.nthu.edu.tw" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "cytnx>=1.1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
